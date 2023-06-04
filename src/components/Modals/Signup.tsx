@@ -54,7 +54,7 @@ const Signup:React.FC<SignupProps> = () => {
                 admin:false
             }
             await setDoc(doc(firestore, "users", newuser.user.uid), userdata);
-            router.push('/')
+            router.push('/basic')
         } catch (error:any) {
             alert(error.message)
         }
