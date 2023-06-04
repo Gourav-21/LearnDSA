@@ -17,7 +17,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           name="description"
-          content="Web application that contains leetcode problems and video solutions"
+          content="This website offers a comprehensive DSA syllabus to assist users in learning and practicing coding problems with  integrated AI, which helps the users in understanding code and explanations of complex concepts."
         />
       </Head>
       <ToastContainer
