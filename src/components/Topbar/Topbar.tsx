@@ -75,7 +75,7 @@ const Topbar: React.FC<TopbarProps> = ({ problemPage }) => {
               <FaChevronLeft />
             </div>
             <Link
-              href={"/"}
+              href={"/problem"}
               className="flex items-center gap-2 text-dark-gray-8"
             >
               <div>
@@ -97,7 +97,7 @@ const Topbar: React.FC<TopbarProps> = ({ problemPage }) => {
           {problemPage && <Timer />}
 
           {!user && (
-            <Link href="/auth">
+            <Link href="/">
               <button
                 onClick={handleclick}
                 className="bg-dark-fill-3 py-1 px-2 cursor-pointer rounded "

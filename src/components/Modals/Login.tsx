@@ -39,7 +39,7 @@ const Login:React.FC<LoginProps> = () => {
             if(!newuser) return;
             setAuthModalState((prev)=>({...prev,isOpen:false}));
 
-            router.push('/')
+            router.push('/basic')
         } catch (error:any) {
             alert(error.message)
         }
@@ -59,7 +59,7 @@ const Login:React.FC<LoginProps> = () => {
                 <input type="password" onChange={handleChangeInput} name="password" id="password" placeholder='********' className='p-2 rounded-lg 
                  border-2 outline-none focus:ring-blue-300 focus:border-blue-500 block w-full' />
             </div>
-            <button type="submit" className='bg-black w-full p-2 text-sm font-medium rounded-md text-white  outline-none
+            <button type="submit" className=' w-full p-2 text-sm font-medium rounded-md border-black bg-black text-white  outline-none
         hover:bg-white hover:text-black hover:border-2 hover:border-black border-2 border-transparent transition duration-300 ease-in-out'>
             {loading ? "Loading..." : "Login"}
 
