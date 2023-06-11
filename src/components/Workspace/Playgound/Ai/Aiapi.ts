@@ -63,6 +63,6 @@ client.generateMessage({
     // required, alternating prompt/response messages
     messages: messages,
   },
-}).then((result) => {
+}).then((result:any) => {
   console.log(JSON.stringify(result, null, 2));
 });
