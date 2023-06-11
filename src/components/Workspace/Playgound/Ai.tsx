@@ -4,8 +4,11 @@ type AiProps = {
     
 };
 
+
 const Ai:React.FC<AiProps> = () => {
     
-    return <div>Have a good coding</div>
+    return <div className="h-[calc(100vh-94px)]">
+        Have a good coding
+        </div>
 }
 export default Ai;

@@ -14,6 +14,7 @@ import { problems } from "@/utils/problems";
 import { arrayUnion, doc, updateDoc } from "firebase/firestore";
 import { settings } from "firebase/analytics";
 import useLocalStorage from "@/hook/useLocalStorage";
+import Ai from "./Ai";
 
 type PlaygoundProps = {
   problem: Problem,
@@ -31,6 +32,7 @@ const Playgound: React.FC<PlaygoundProps> = ({ problem,setSuccess,setSolved }) =
   const [activeTestCase,setActiveTestCase]=useState(0);
   let [userCode, setUserCode] = useState<string>(problem.starterCode)
   const [fontSize, setFontSize] = useLocalStorage("lcc-fontSize", "16px");
+  const [ai, setAi] = useState(false)
 
 
   const [Settings, setSettings] = useState<ISetting>({
@@ -41,6 +43,10 @@ const Playgound: React.FC<PlaygoundProps> = ({ problem,setSuccess,setSolved }) =
 
   const [user] = useAuthState(auth)
   const {query: {pid}}=useRouter();
+
+  const handleAi=()=>{
+    setAi(!ai);
+  }
 
   const handleSubmit= async ()=>{
     if(!user){
@@ -115,6 +121,7 @@ const Playgound: React.FC<PlaygoundProps> = ({ problem,setSuccess,setSolved }) =
       <div className="bg-dark-layer-1 flex flex-col relative overflow-hidden">
         <PreferenceNav settings={Settings} setSettings={setSettings} />
 
+      {ai?<Ai/>:
         <Split
           className="h-[calc(100vh-94px)]"
           direction="vertical"
@@ -171,8 +178,8 @@ const Playgound: React.FC<PlaygoundProps> = ({ problem,setSuccess,setSolved }) =
 
          
         </Split>
-        
-        <EditorFooter handleSubmit={handleSubmit} />
+         }
+        <EditorFooter ai={ai} handleAi={handleAi} handleSubmit={handleSubmit} />
       </div>
     </>
   );
