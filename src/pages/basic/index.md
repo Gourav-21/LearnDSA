@@ -9,7 +9,7 @@ Arrays are among the most common data structures encountered during interviews. 
 ### Advantages
 
 - Store multiple elements of the same type with one single variable name
-- Accessing elements is fast as long as you have the index, as opposed to [linked lists](https://www.instagram.com/)where you have to traverse from the head.
+- Accessing elements is fast as long as you have the index, as opposed to [linked lists](/problems/two-sum) where you have to traverse from the head.
 
 ### Disadvantages
 
@@ -64,23 +64,23 @@ Note that because both arrays and strings are sequences (a string is an array of
 
 ### Sliding window 🪟
 
-Master the [sliding window technique](https://leetcode.com/problems/minimum-window-substring/solutions/26808/here-is-a-10-line-template-that-can-solve-most-substring-problems/) that applies to many subarray/substring problems. In a sliding window, the two pointers usually move in the same direction will never overtake each other. This ensures that each value is only visited at most twice and the time complexity is still O(n). Examples: [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/), [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/), [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)
+Master the [sliding window technique](/problems/two-sum) that applies to many subarray/substring problems. In a sliding window, the two pointers usually move in the same direction will never overtake each other. This ensures that each value is only visited at most twice and the time complexity is still O(n). Examples: [Longest Substring Without Repeating Characters](/problems/two-sum), [Minimum Size Subarray Sum](/problems/two-sum), [Minimum Window Substring](/problems/two-sum)
 
 ### Two pointers🫵
 
-Two pointers is a more general version of sliding window where the pointers can cross each other and can be on different arrays. Examples: [Sort Colors](https://leetcode.com/problems/sort-colors/), [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/)
+Two pointers is a more general version of sliding window where the pointers can cross each other and can be on different arrays. Examples: [Sort Colors](/problems/two-sum), [Palindromic Substrings](/problems/two-sum)
 
-When you are given two arrays to process, it is common to have one index per array (pointer) to traverse/compare the both of them, incrementing one of the pointers when relevant. For example, we use this approach to merge two sorted arrays. Examples: [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)
+When you are given two arrays to process, it is common to have one index per array (pointer) to traverse/compare the both of them, incrementing one of the pointers when relevant. For example, we use this approach to merge two sorted arrays. Examples: [Merge Sorted Array](/problems/two-sum)
 
 ### Traversing from the right
 
-Sometimes you can traverse the array starting from the right instead of the conventional approach of from the left. Examples: [Daily Temperatures](https://leetcode.com/problems/daily-temperatures/), [Number of Visible People in a Queue](https://leetcode.com/problems/number-of-visible-people-in-a-queue/)
+Sometimes you can traverse the array starting from the right instead of the conventional approach of from the left. Examples: [Daily Temperatures](/problems/two-sum), [Number of Visible People in a Queue](/problems/two-sum)
 
 ### Sorting the array
 
 Is the array sorted or partially sorted? If it is, some form of binary search should be possible. This also usually means that the interviewer is looking for a solution that is faster than O(n).
 
-Can you sort the array? Sometimes Sometimes sorting the array first may significantly simplify the problem. Obviously this would not work if the order of array elements need to be preserved. Examples: [Merge Intervals](https://leetcode.com/problems/merge-intervals/), [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/)
+Can you sort the array? Sometimes Sometimes sorting the array first may significantly simplify the problem. Obviously this would not work if the order of array elements need to be preserved. Examples: [Merge Intervals](/problems/two-sum), [Non-overlapping Intervals](/problems/two-sum)
 
 ### Precomputation
 
@@ -88,7 +88,7 @@ For questions where summation or multiplication of a subarray is involved, pre-c
 
 ### Index as a hash key
 
-If you are given a sequence and the interviewer asks for O(1) space, it might be possible to use the array itself as a hash table. For example, if the array only has values from 1 to N, where N is the length of the array, negate the value at that index (minus one) to indicate presence of that number. Examples: [First Missing Positive](https://leetcode.com/problems/first-missing-positive/), [Daily Temperatures](https://leetcode.com/problems/daily-temperatures/)
+If you are given a sequence and the interviewer asks for O(1) space, it might be possible to use the array itself as a hash table. For example, if the array only has values from 1 to N, where N is the length of the array, negate the value at that index (minus one) to indicate presence of that number. Examples: [First Missing Positive](h/problems/two-sum), [Daily Temperatures](/problems/two-sum)
 
 ### Traversing the array more than once
 
@@ -107,7 +107,7 @@ These are essential questions to practice if you're studying for this topic.
 
 These are recommended questions to practice after you have studied for the topic and have practiced the essential questions.
 
-- [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)
+- [Contains Duplicate](/problems/two-sum)
 - [Maximum Product Subarray](/problems/two-sum)
 - [Search in Rotated Sorted Array](/problems/two-sum)
 - [3Sum](/problems/two-sum)
