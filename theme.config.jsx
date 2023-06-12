@@ -11,6 +11,7 @@ export default {
     ),
     project: {
       link: 'https://github.com/Gourav-21/LearnDSA'
-    }
+    },
+    docsRepositoryBase: 'https://github.com/Gourav-21/LearnDSA/tree/master'
     // ...
   }
