@@ -64,14 +64,14 @@ export const problems: Problem[] = [
 		order: 7,
 		videoId: "",
 	},
-	{
-		id: "maximum-depth-of-binary-tree",
-		title: "Maximum Depth of Binary Tree",
-		difficulty: "Easy",
-		category: "Tree",
-		order: 8,
-		videoId: "4qYTqOiRMoM",
-	},
+	// {
+	// 	id: "maximum-depth-of-binary-tree",
+	// 	title: "Maximum Depth of Binary Tree",
+	// 	difficulty: "Easy",
+	// 	category: "Tree",
+	// 	order: 8,
+	// 	videoId: "4qYTqOiRMoM",
+	// },
 	{
 		id: "best-time-to-buy-and-sell-stock",
 		title: "Best Time to Buy and Sell Stock",
