@@ -121,7 +121,7 @@ const Playgound: React.FC<PlaygoundProps> = ({ problem,setSuccess,setSolved }) =
       <div className="bg-dark-layer-1 flex flex-col relative overflow-hidden">
         <PreferenceNav settings={Settings} setSettings={setSettings} />
 
-      {ai?<Ai/>:
+      {ai?<Ai problem= {problem} userCode= {userCode} />:
         <Split
           className="h-[calc(100vh-94px)]"
           direction="vertical"
